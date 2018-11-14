@@ -1,4 +1,4 @@
-var engajabot = require('./node_modules/botkit/lib/engajabot.js');
+var engajabot = require('./node_modules/engajabot/lib/engajabot.js');
 
 var controller = engajabot.slackbot({
 debug: true,
