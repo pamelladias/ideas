@@ -1,0 +1,12 @@
+var engajabot = require('./node_modules/botkit/lib/engajabot.js');
+
+var controller = engajabot.slackbot({
+debug: true,
+});
+
+var bot = controller.spawn({
+token: 'xoxb-19986151392-478860593216-2zm96GzjjqsFPfCr11zTRSAK'
+}).startRTM();
+
+controller.hears(['oi', 'olá'], 'direct_message,direct_mention,mention', function(bot, message) {
+var helloText = "Olá, humano, como posso ajudar?";
